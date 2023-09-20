@@ -7,7 +7,7 @@ const Layout = () => {
     const navigation = useNavigation();
     // console.log(navigation)
     return (
-        <div className="border border-black p-3">
+        <div className="p-3">
             <NavBar></NavBar>
             <div className="min-h-screen">
                 {

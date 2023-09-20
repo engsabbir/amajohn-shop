@@ -1,16 +1,15 @@
 import { Link, Outlet } from "react-router-dom";
-import './ProfileLayout.css'
 
 const ProfileLayout = () => {
     return (
         <div id="profile-tab" className="flex gap-5">
-            <div className="w-[20%] border border-black grid">
-                <Link to='/profile'>Profile</Link>
-                <Link to='/profile/edit'>Edit Profile</Link>
-                <Link to='/profile/blog'>Blog</Link>
-                <Link to='/profile/contact'>Contact Me</Link>
+            <div className="w-[20%] grid gap-2 text-xl">
+                <Link className="hover:bg-gray-400 hover:text-white" to='/profile'>Profile</Link>
+                <Link className="hover:bg-gray-400 hover:text-white" to='/profile/edit'>Edit Profile</Link>
+                <Link className="hover:bg-gray-400 hover:text-white" to='/profile/blog'>Blog</Link>
+                <Link className="hover:bg-gray-400 hover:text-white" to='/profile/contact'>Contact Me</Link>
             </div>
-            <div className="w-[80%] border border-black">
+            <div className="w-[80%]">
                 <Outlet></Outlet>
             </div>
         </div>
